@@ -1,0 +1,416 @@
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    background-color: aliceblue;
+    
+}
+.mainMenu{
+    display: flex;
+    list-style: none;
+}
+.mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color:#000;
+    
+}
+.mainMenu li a:hover{
+    background:  rgb(209, 110, 172);
+}
+.openMenu i {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+   
+}
+.logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.mainMenu .closeMenu i {
+     display: none;
+     cursor: pointer;
+
+}
+.logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.menteeWorld{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.brand{
+    font-size: 30px;
+}
+.Greeting{
+    background-color: rgb(209, 110, 172);;
+    text-align: center;
+    border: none;
+    /* border-width: 40px; */
+    padding: 20px;
+    height: 50px;
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 1%;
+}
+.InspirationTitle{
+    border: none;
+    /* border-width: 100px; */
+    height: 50px;
+    padding: 20px;
+    background-color: rgb(209, 110, 172);
+    text-align: center;
+    width: 50%;
+    margin-left: 20%;
+
+}
+.MentorProfile{
+    display: flex;
+    /* align-content: center; */
+    margin-left: 29%;
+    gap: 5%;
+    padding: 3%;
+}
+body{
+    background-color: #cb9ebd;
+}
+@media screen and (max-width:375px) {
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        color: #000;
+        /* margin-right: 20%; */
+        margin-left: 9%;
+        /* height: 4%; */
+    }
+    .mainMenu{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    .mainMenu li a {
+        display: inline-block;
+        /* padding: 15px; */
+        text-decoration: none;
+        color:#000;
+        font-size: 20px;
+        
+    }
+    .mainMenu li a:hover{
+        background:  rgb(209, 110, 172);
+    }
+    .openMenu i {
+        /* font-size: 2rem; */
+        /* margin: 20px; */
+        display: none;
+        cursor: pointer;
+       
+    }
+    .logo{
+        /* margin: 6px; */
+        font-size: 15px;
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .mainMenu .closeMenu i {
+         display: none;
+         cursor: pointer;
+    
+    }
+    /* .logo{
+        margin: 6px;
+        font-size: 25px;
+        cursor: pointer;
+        display: flex;
+    } */
+    .MenteeWorld{
+        width: 0.25rem;
+    }
+    /* .Mentee World{
+        width: 2px;
+    } */
+    .Greeting{
+        background-color: rgb(209, 110, 172);
+        text-align: center;
+        border: none;
+        border-width: 100px;
+        height: 90px;
+        margin-top: 2%;
+        padding: 15%;
+        margin-left: 3%;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 1%;
+    }
+    .MentorProfile{
+        display: flex;
+        flex-wrap: wrap;
+        /* align-content: center; */
+        /* margin-left:%; */
+        gap: 5%;
+        padding: 5%;
+        margin-left: 3%;
+    }
+    
+    .InspirationTitle{
+        border: none;
+        border-width: 100px;
+        height: 90px;
+        background-color: rgb(209, 110, 172);
+        text-align: center;
+    } 
+}
+
+@media screen and (max-width:700px) {
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        color: #000;
+        margin-right: 20%;
+    }
+    .mainMenu{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    .mainMenu li a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        color:#000;
+        
+    }
+    .mainMenu li a:hover{
+        background:  rgb(209, 110, 172);
+    }
+    .openMenu i {
+        font-size: 2rem;
+        margin: 20px;
+        display: none;
+        cursor: pointer;
+       
+    }
+    .logo{
+        margin: 6px;
+        font-size: 25px;
+        cursor: pointer;
+        display: flex;
+        
+    }
+    .mainMenu .closeMenu i {
+         display: none;
+         cursor: pointer;
+    
+    }
+    .logo{
+        margin: 6px;
+        font-size: 25px;
+        cursor: pointer;
+        display: flex;
+    }
+    .Mentee World{
+        width: 6px;
+    }
+    .Greeting{
+        background-color: rgb(209, 110, 172);
+        text-align: center;
+        border: none;
+        border-width: 100px;
+        height: 90px;
+    }
+    .MentorProfile{
+        display: grid;
+        grid-template-columns: 1 1fr;
+        /* flex-wrap: wrap; */
+        /* align-content: center; */
+        margin-left:15%;
+        gap: 5%;
+        padding: 3%;
+    }
+    
+    .InspirationTitle{
+        border: none;
+        border-width: 100px;
+        height: 90px;
+        background-color: rgb(209, 110, 172);
+        text-align: center;
+    } 
+}
+@media screen and (max-width:800px) {
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        color: #000;
+        margin-right: 20%;
+    }
+    .mainMenu{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    .mainMenu li a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        color:#000;
+        
+    }
+    .mainMenu li a:hover{
+        background:  rgb(209, 110, 172);
+    }
+    .openMenu i {
+        font-size: 2rem;
+        margin: 20px;
+        display: none;
+        cursor: pointer;
+       
+    }
+    .logo{
+        margin: 6px;
+        font-size: 25px;
+        cursor: pointer;
+        display: flex;
+        
+    }
+    .mainMenu .closeMenu i {
+         display: none;
+         cursor: pointer;
+    
+    }
+    .logo{
+        margin: 6px;
+        font-size: 25px;
+        cursor: pointer;
+        display: flex;
+    }
+    .Mentee World{
+        width: 6px;
+    }
+    .Greeting{
+        background-color: rgb(209, 110, 172);
+        text-align: center;
+        border: none;
+        border-width: 100px;
+        height: 90px;
+    }
+    .MentorProfile{
+        display: flex;
+        flex-wrap: wrap;
+        /* align-content: center; */
+        margin-left:15%;
+        gap: 5%;
+        padding: 3%;
+    }
+    
+    .InspirationTitle{
+        border: none;
+        border-width: 100px;
+        height: 90px;
+        background-color: rgb(209, 110, 172);
+        text-align: center;
+    } 
+}
+@media screen and (min-width:810px) and (max-width:1024) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        color: #000;
+        background-color: aliceblue;
+        
+    }
+    .mainMenu{
+        display: flex;
+        list-style: none;
+    }
+    .mainMenu li a {
+        display: inline-block;
+        padding: 15px;
+        font-size: 30px;
+        text-decoration: none;
+        color:#000;
+        
+    }
+    .mainMenu li a:hover{
+        background:  rgb(209, 110, 172);
+    }
+    .openMenu i {
+        font-size: 2rem;
+        margin: 20px;
+        display: none;
+        cursor: pointer;
+       
+    }
+    .logo{
+        margin: 6px;
+        font-size: 25px;
+        cursor: pointer;
+        display: flex;
+    }
+    .mainMenu .closeMenu i {
+         display: none;
+         cursor: pointer;
+    
+    }
+    .logo{
+        margin: 6px;
+        font-size: 25px;
+        cursor: pointer;
+        display: flex;
+    }
+    .menteeWorld{
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+    }
+    .brand{
+        font-size: 30px;
+    }
+    .Greeting{
+        background-color: rgb(209, 110, 172);;
+        text-align: center;
+        border: none;
+        /* border-width: 40px; */
+        padding: 20px;
+        height: 50px;
+        width: 50%;
+        margin-left: 20%;
+        margin-top: 1%;
+    }
+    .InspirationTitle{
+        border: none;
+        /* border-width: 100px; */
+        height: 50px;
+        padding: 20px;
+        background-color: rgb(209, 110, 172);
+        text-align: center;
+        width: 50%;
+        margin-left: 20%;
+    
+    }
+    .MentorProfile{
+        display: flex;
+        /* align-content: center; */
+        margin-left: 29%;
+        gap: 5%;
+        padding: 3%;
+    }
+    body{
+        background-color: #cb9ebd;
+    }
+}

@@ -1,0 +1,642 @@
+nav{
+    display: flex;
+     justify-content: space-between; 
+    color: #000;
+    /* margin-right: 20%; */
+}
+.mainMenu{
+    display: flex;
+    list-style: none;
+}
+.mainMenu li a {
+    display: flex;
+    /* flex-wrap: wrap; */
+    font-size: 27px;
+    /* padding: 15px; */
+    text-decoration: none;
+    color:#000;
+    
+}
+.mainMenu li a:hover{
+    background:  rgb(209, 110, 172);
+}
+.openMenu i {
+    font-size: 2rem;
+    /* margin: 20px; */
+    display: none;
+    cursor: pointer;
+   
+}
+.logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.menteeWorld{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.brand{
+      font-size: 30px;
+    
+}
+.mainMenu .closeMenu i {
+     display: none;
+     cursor: pointer;
+
+}
+/* .logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+} */
+.MenteeWorld{
+    width: 0.25rem;
+}
+
+body {
+    height: 100%;
+    /* background-color: rgb(247, 123, 123); */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.todo_list_container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgb(209, 110, 172), 0%, #FA71CD 100%);
+    padding: 10px;
+    box-shadow:10px 10px 14px rgba(33,33,33,.7) ;
+}
+.todo_list{
+    width: 100%;
+    max-width:540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo_list h2{
+    color: rgb(209, 110, 172);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo_list img{
+    width: 30px;
+    margin-left: 5px;
+}
+.todo_list_add_row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #EDEEF0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline:none;
+    padding:16px 50px;
+    background: rgb(209, 110, 172);
+    color:#fff;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding:12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url(Images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: grey;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(Images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color:gray;
+    line-height: 40px;
+    text-align: centre;
+}
+@media screen and (max-width:700px) {
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        color: #000;
+        /* margin-right: 20%; */
+    }
+    .mainMenu{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    .mainMenu li a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        color:#000;
+        
+    }
+    .mainMenu li a:hover{
+        background:  rgb(209, 110, 172);
+    }
+    .openMenu i {
+        /* font-size: 2rem; */
+        margin: 20px;
+        display: none;
+        cursor: pointer;
+       
+    }
+    .logo{
+        margin: 6px;
+        font-size: 15px;
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .mainMenu .closeMenu i {
+         display: none;
+         cursor: pointer;
+    
+    }
+    .logo{
+        margin: 6px;
+        font-size: 25px;
+        cursor: pointer;
+        display: flex;
+    }
+    .MenteeWorld{
+        width: 0.25rem;
+    }
+    
+    body {
+        height: 100%;
+        background-color: rgb(247, 123, 123);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .todo_list_container{
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(to top, rgb(209, 110, 172) 0%, #FA71CD 100%);
+        padding: 10px;
+        box-shadow:10px 10px 14px rgba(33,33,33,.7) ;
+    }
+    .todo_list{
+        width: 100%;
+        max-width:540px;
+        background: rgb(209, 110, 172);
+        margin: 100px auto 20px;
+        padding: 40px 30px 70px;
+        border-radius: 10px;
+    }
+    .todo_list h2{
+        color: rgb(209, 110, 172);;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .todo_list img{
+        width: 30px;
+        margin-left: 5px;
+    }
+    .todo_list_add_row{
+        display: flex;
+        flex-wrap: wrap;
+        
+        align-items: center;
+        justify-content: space-between;
+        background: #EDEEF0;
+        border-radius: 30px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+    input{
+        flex:1;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 10px;
+        font-weight: 14px;
+    }
+    button{
+        border: none;
+        outline:none;
+        padding:16px 50px;
+        background: rgb(209, 110, 172);
+        color:#fff;
+        font-size: 16px;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+    ul li{
+        list-style: none;
+        font-size: 17px;
+        padding:12px 8px 12px 50px;
+        user-select: none;
+        cursor: pointer;
+        position: relative;
+    }
+    ul li::before{
+        content: '';
+        position: absolute;
+        height: 28px;
+        width: 28px;
+        background-image: url(Images/unchecked.png);
+        background-size: cover;
+        background-position: center;
+        top: 12px;
+        left: 8px;
+    }
+    ul li.checked{
+        color: grey;
+        text-decoration: line-through;
+    }
+    ul li.checked::before{
+        background-image: url(Images/checked.png);
+    }
+    ul li span{
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        color:gray;
+        line-height: 40px;
+        text-align: centre;
+    }
+
+}
+@media screen and (max-width:375px) {
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        color: #000;
+        /* margin-right: 20%; */
+    }
+    .mainMenu{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    .mainMenu li a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        color:#000;
+        
+    }
+    .mainMenu li a:hover{
+        background:  rgb(209, 110, 172);
+    }
+    .openMenu i {
+        font-size: 2rem;
+        margin: 20px;
+        display: none;
+        cursor: pointer;
+       
+    }
+    .logo{
+        margin: 6px;
+        font-size: 25px;
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .mainMenu .closeMenu i {
+         display: none;
+         cursor: pointer;
+    
+    }
+    .logo{
+        margin: 6px;
+        font-size: 25px;
+        cursor: pointer;
+        display: flex;
+    }
+    .MenteeWorld{
+        width: 0.25rem;
+    }
+    
+    body {
+        height: 100%;
+        background-color: rgb(209, 110, 172);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .todo_list_container{
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(to top, #C471F5 0%, #FA71CD 100%);
+        padding: 10px;
+        box-shadow:10px 10px 14px rgba(33,33,33,.7) ;
+    }
+    .todo_list{
+        width: 100%;
+        max-width:540px;
+        background: white;
+        margin: 100px auto 20px;
+        padding: 40px 30px 70px;
+        border-radius: 10px;
+    }
+    .todo_list h2{
+        color: rgb(133, 200, 223);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .todo_list img{
+        width: 30px;
+        margin-left: 5px;
+    }
+    .todo_list_add_row{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background: #EDEEF0;
+        border-radius: 30px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+    input{
+        flex:1;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 10px;
+        font-weight: 14px;
+    }
+    button{
+        border: none;
+        outline:none;
+        padding:16px 50px;
+        background: rgb(146, 206, 226);
+        color:#fff;
+        font-size: 16px;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+    ul li{
+        list-style: none;
+        font-size: 17px;
+        padding:12px 8px 12px 50px;
+        user-select: none;
+        cursor: pointer;
+        position: relative;
+    }
+    ul li::before{
+        content: '';
+        position: absolute;
+        height: 28px;
+        width: 28px;
+        background-image: url(Images/unchecked.png);
+        background-size: cover;
+        background-position: center;
+        top: 12px;
+        left: 8px;
+    }
+    ul li.checked{
+        color: grey;
+        text-decoration: line-through;
+    }
+    ul li.checked::before{
+        background-image: url(Images/checked.png);
+    }
+    ul li span{
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        color:gray;
+        line-height: 40px;
+        text-align: centre;
+    }
+}
+@media screen and (max-width:800px) {
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        color: #000;
+        /* margin-right: 20%; */
+    }
+    .mainMenu{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    .mainMenu li a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        color:#000;
+        
+    }
+    .mainMenu li a:hover{
+        background:  rgb(209, 110, 172);
+    }
+    .openMenu i {
+        font-size: 2rem;
+        margin: 20px;
+        display: none;
+        cursor: pointer;
+       
+    }
+    .logo{
+        margin: 6px;
+        font-size: 25px;
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .mainMenu .closeMenu i {
+         display: none;
+         cursor: pointer;
+    
+    }
+    .logo{
+        margin: 6px;
+        font-size: 25px;
+        cursor: pointer;
+        display: flex;
+    }
+    .MenteeWorld{
+        width: 0.25rem;
+    }
+    
+    body {
+        height: 100%;
+        background-color: rgb(209, 110, 172);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .todo_list_container{
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(to top, #C471F5 0%, #FA71CD 100%);
+        padding: 10px;
+        box-shadow:10px 10px 14px rgba(33,33,33,.7) ;
+    }
+    .todo_list{
+        width: 100%;
+        max-width:540px;
+        background: white;
+        margin: 100px auto 20px;
+        padding: 40px 30px 70px;
+        border-radius: 10px;
+    }
+    .todo_list h2{
+        color: rgb(133, 200, 223);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .todo_list img{
+        width: 30px;
+        margin-left: 5px;
+    }
+    .todo_list_add_row{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background: #EDEEF0;
+        border-radius: 30px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+    input{
+        flex:1;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 10px;
+        font-weight: 14px;
+    }
+    button{
+        border: none;
+        outline:none;
+        padding:16px 50px;
+        background: rgb(146, 206, 226);
+        color:#fff;
+        font-size: 16px;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+    ul li{
+        list-style: none;
+        font-size: 17px;
+        padding:12px 8px 12px 50px;
+        user-select: none;
+        cursor: pointer;
+        position: relative;
+    }
+    ul li::before{
+        content: '';
+        position: absolute;
+        height: 28px;
+        width: 28px;
+        background-image: url(Images/unchecked.png);
+        background-size: cover;
+        background-position: center;
+        top: 12px;
+        left: 8px;
+    }
+    ul li.checked{
+        color: grey;
+        text-decoration: line-through;
+    }
+    ul li.checked::before{
+        background-image: url(Images/checked.png);
+    }
+    ul li span{
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        color:gray;
+        line-height: 40px;
+        text-align: centre;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
