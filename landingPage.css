@@ -66,28 +66,27 @@ a{
     margin-top: 5%;
 }
 @media screen and (max-width:375px) {
-    /* body{
+    body{
         justify-content: center;
         
-    } */
-    .Introduction{
-        background-color: rgb(209, 110, 172);
-        
-        
     }
+    .Introduction{
+        background-color: aliceblue;
+    }
+    
     .logo{
         display: flex;
         margin-left: 40%;
     }
     .GreetingFigure{
         font-size: small;
-        font-size: 20px;
+        font-size: 7px;
         text-align: center;
     }
     .GreetingText{
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 1px;
         /* margin-left: 10%; */
     }
     .landingImage{
@@ -119,7 +118,7 @@ a{
     a{
         text-decoration: none;
         color: #000;
-        font-size: 24px;
+        font-size: 14px;
     } 
 }
 
@@ -149,9 +148,7 @@ a{
         /* margin-left: 10%; */
     }
     .landingImage{
-        width: 350px;
-        height: 3opx;
-        margin-top: 5%;
+        width: 290px;
     }
     
     .button{
@@ -182,3 +179,4 @@ a{
         font-size: 24px;
     } 
 }
+
