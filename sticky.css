@@ -1,61 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap');
+
 nav{
-  display: flex;
-  justify-content: space-between;
-  color: #000;
-  /* margin-right: 20%; */
-  background-color: #f8f5f5;
-}
-.mainMenu{
-  display: flex;
-  list-style: none;
-}
-.mainMenu  a {
-  display: inline-block;
-  padding: 15px;
-  font-size: 30px;
-  text-decoration: none;
-  color:#000;
-  
-}
-.mainMenu  a:hover{
-  background:  rgb(209, 110, 172);;
-}
-.openMenu i {
-  font-size: 2rem;
-  margin: 20px;
-  display: none;
-  cursor: pointer;
- 
-}
-.logo{
-  margin: 6px;
-  font-size: 25px;
-  cursor: pointer;
-  display: flex;
-}
-.mainMenu .closeMenu i {
-   display: none;
-   cursor: pointer;
-
-}
-.logo{
-  margin: 6px;
-  font-size: 25px;
-  cursor: pointer;
-  display: flex;
-}
-.menteeWorld{
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-}
-.brand{
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    /* margin-right: 20%; */
+    background-color: #f8f5f5;
+  }
+  .mainMenu{
+    display: flex;
+    list-style: none;
+  }
+  .mainMenu  a {
+    display: inline-block;
+    padding: 15px;
     font-size: 30px;
-}
-
-
-
+    text-decoration: none;
+    color:#000;
+    
+  }
+  .mainMenu  a:hover{
+    background:  #e4a1ca;
+  }
+  .openMenu i {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+   
+  }
+  .logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+  }
+  .mainMenu .closeMenu i {
+     display: none;
+     cursor: pointer;
+  
+  }
+  .logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+  }
+  .menteeWorld{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+  .brand{
+      font-size: 30px;
+  }
 *{
   margin: 0;
   padding: 0;
@@ -97,11 +95,10 @@ background-color:#bb2064;
 cursor: pointer;
 }
 .btn-add:hover{
-  background-color: #bb2064;
+  background-color: #e4a1ca;
   border-radius: 5px;
 }
-
-  @media screen and (max-width:375px) {
+@media screen and (max-width:375px) {
     nav{
       display: grid;
       grid-template-columns: 1 1fr;
@@ -193,8 +190,8 @@ cursor: pointer;
       border-radius: 5px;
     }
     
-    }
-  @media screen and (max-width:700px) {
+}
+@media screen and (max-width:700px) {
     nav{
       display: grid;
       /* justify-content: space-between; */
