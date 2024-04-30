@@ -62,9 +62,14 @@ nav{
 img{
     margin-left: 10%;
     margin-top: 2%;
+  
 }
 body{
     background-color:#cb9ebd; 
+
+}
+.bookcover{
+    border-radius: 70px;
 }
 @media screen and (max-width:400px) {
     nav{

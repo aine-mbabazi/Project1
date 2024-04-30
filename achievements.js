@@ -22,7 +22,7 @@ textElement.addEventListener("change",()=>{
 });
 
 textElement.addEventListener("dblclick",()=>{
-  const check=confirm("Are You Sure to Delete ?");
+  const check=confirm("Did you achieve this?");
   if(check){
     deleteNotes(id,textElement);
   }
